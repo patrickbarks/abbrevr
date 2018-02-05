@@ -57,19 +57,19 @@ data.frame(doi = my_dois,
            title_short = my_titles_short,
            stringsAsFactors = FALSE)
 
->                          doi                                          title           title_short
->            10.1577/T09-174.1 Transactions of the American Fisheries Society Trans. Am. Fish. Soc.
-> 10.1371/journal.pone.0075858                                       PLoS ONE              PLoS ONE
->      10.1111/1365-2435.12359                             Functional Ecology          Funct. Ecol.
->            10.1111/jeb.12823                Journal of Evolutionary Biology        J. Evol. Biol.
->      10.1111/1365-2745.12937                             Journal of Ecology              J. Ecol.
+#>                          doi                                          title           title_short
+#>            10.1577/T09-174.1 Transactions of the American Fisheries Society Trans. Am. Fish. Soc.
+#> 10.1371/journal.pone.0075858                                       PLoS ONE              PLoS ONE
+#>      10.1111/1365-2435.12359                             Functional Ecology          Funct. Ecol.
+#>            10.1111/jeb.12823                Journal of Evolutionary Biology        J. Evol. Biol.
+#>      10.1111/1365-2745.12937                             Journal of Ecology              J. Ecol.
 ```
 
 ## Caveats
 
 The current version... 
-* only handles common articles, prepositions, and conjunctions in English, German, and French. (ISO 4 dictates that these classes should generally be ommitted, with exceptions noted in the document linked above)
-* omits all punctuation except for hyphens, and periods following abbreviated terms (ISO 4 dictates all punctuation except commas should be retained, but periods should be replaced with commas)
+* only handles common articles, prepositions, and conjunctions in English, German, and French (ISO 4 dictates that these classes should generally be ommitted, with exceptions noted in the document linked above)
+* omits all punctuation except for hyphens (ISO 4 dictates all punctuation except commas should be retained, but periods should be replaced with commas)
 * does not omit generic identifiers such as "Section", "Series", or "Part" (ISO 4 dictates such generics should be ommitted unless required for identification)
 * may not retain all diacritic marks (ISO 4 dictates that all diacritic marks should be retained)
 
