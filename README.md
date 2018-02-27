@@ -1,5 +1,7 @@
 # abbrevr # 
 
+[![Travis-CI Build Status](https://travis-ci.org/patrickbarks/abbrevr.svg?branch=master)](https://travis-ci.org/patrickbarks/abbrevr)
+
 An R package to abbreviate journal titles based on the ISO 4 standard.
 
 An outline of the ISO 4 rules for abbreviation can be found [here](http://www.uai.cl/images/sitio/biblioteca/citas/ISO_4_1997en.pdf), and a text file containing the ISSN List of Title Word Abbreviations (LTWA) can be found [here](http://www.issn.org/services/online-services/access-to-the-ltwa).
