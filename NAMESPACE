@@ -3,4 +3,6 @@
 export(AbbrevTerm)
 export(AbbrevTitle)
 export(ToTitleCase)
-import(stringi)
+importFrom(stringi,stri_cmp_equiv)
+importFrom(stringi,stri_startswith_coll)
+importFrom(stringi,stri_trans_general)

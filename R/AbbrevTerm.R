@@ -29,7 +29,7 @@
 #' AbbrevTerm("Canadian Journal of Entomology")
 #' }
 #' @seealso AbbrevTitle
-#' @import stringi
+#' @importFrom stringi stri_cmp_equiv stri_startswith_coll stri_trans_general
 #' @export AbbrevTerm
 AbbrevTerm <- function(x, check = TRUE) {
 
