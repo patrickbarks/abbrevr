@@ -71,6 +71,7 @@ AbbrevTerm <- function(x, check = TRUE) {
       } else if (length(ind_prefix) == 1) {
         # if one matching prefixes, return corresponding abbrev
         out <- ltwa_prefix$ABBREVIATIONS[ind_prefix]
+        if (is.na(out)) out <- x
       } else {
         # if multiple matching prefixes, choose abbrev from longest match
         ind_prefix <- ind_prefix[which.max(nchar(ltwa_prefix$WORD[ind_prefix]))]
